@@ -1,0 +1,18 @@
+.allparent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowchild {
+  display: flex;
+  flex: auto;
+}
+
+.boxchild {
+  flex: auto;
+}
+
+.hovered {
+  background-color: blue;
+}
