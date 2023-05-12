@@ -30,9 +30,5 @@ const btn = document.getElementById('reset');
 btn.addEventListener('click', () => {
     n = prompt("Enter size of new grid: ");
     const parent = document.querySelector(".allparent");
-    if (n > 100 || n < 0) {
-        alert('Enter a number from 0 to 100');
-        return;
-    }
     reset(parent, n);
 })
