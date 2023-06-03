@@ -1,11 +1,11 @@
-function getRandomRGBA() {
+function getRandomRGB() {
     var o = Math.round, r = Math.random, s = 255;
-    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+    return 'rgb(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
 function hover(boxid) {
     const box = document.getElementById(boxid);
-    box.style.backgroundColor = getRandomRGBA();
+    box.style.backgroundColor = getRandomRGB();
 }
 
 function reset(container, newsize) {
