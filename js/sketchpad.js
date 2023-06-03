@@ -1,6 +1,11 @@
+function getRandomRGBA() {
+    var o = Math.round, r = Math.random, s = 255;
+    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+}
+
 function hover(boxid) {
     const box = document.getElementById(boxid);
-    box.classList.add("hovered");
+    box.style.backgroundColor = getRandomRGBA();
 }
 
 function reset(container, newsize) {
